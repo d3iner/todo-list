@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+}
+form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: grid;
+    place-items: center;
+    background-color: black;
+    height: 100vh;
+}
+h1{
+    color: blue;
+    background-color: red;
+    margin: 0;
+}
+.container{
+    height: 400px;
+    width: clamp(200px, 80%, 800px);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+}
+.container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.input__container{
+    display: flex;
+    flex-direction: column;
+
+}
+.input__container input,
+.input__container button{
+    width: 80%;
+    margin-block: 10px;
+    padding: 0;
+}
+.list__container{
+    height: 60%;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    background-color: aqua;
+    height: 100%;
+    width: 80% !important;
+    overflow: auto;
+}
+.item{
+    display: flex;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-around !important;
+    height: 30px;
+    width: 100%;
+}
+.item p{
+    font-size: 12px;
+}
+.item button{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+}
+.done{
+    background-color: green !important;
+}
